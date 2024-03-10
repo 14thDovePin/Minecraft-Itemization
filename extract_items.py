@@ -46,6 +46,11 @@ def main():
             if key.startswith(path):
                 final_items.append(lang_file[key])
     final_items.sort()
+    data = [i+"\n" for i in final_items]
+
+    # Write data into output file.
+    with open(OUTPUT, 'w') as f:
+        f.writelines(data)
 
 
 if __name__ == "__main__":
