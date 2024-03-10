@@ -3,6 +3,13 @@ TODO:
 
 
 
+Added a path exclusion system.
+
+- Added code to exclude items with designated signitures.
+
+
+
+
 Script can now create an output file.
 
 - Added code to write the data extracted from previous commits.
