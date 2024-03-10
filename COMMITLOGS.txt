@@ -3,6 +3,13 @@ TODO:
 
 
 
+Added a simple test function to check lang keys paths.
+
+- Added test function `view_lang_keys_paths`.
+- Refactored code.
+
+
+
 Added ability to extract contents of lang file.
 
 - Lang file's content's can now be extracted.

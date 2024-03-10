@@ -35,9 +35,26 @@ def main():
         with jar.open(LANG) as jar_lang_file:
             lang_file = json.load(jar_lang_file)
 
-    print("Lang File Type: ", type(lang_file))
-    print("Lang File Length: ", len(lang_file))
+    view_lang_keys_paths(lang_file)
 
+
+def view_lang_keys_paths(lang_file):
+    """View the first few asset path of lang file keys."""
+    # TODO: Remove function & related code before finalizing.
+    paths = []
+    paths_final = []
+
+    # Extract first 2 paths of keys.
+    for key in lang_file.keys():
+        path = key.split('.')
+        final = '.'.join(path[:2])
+        paths.append(final)
+
+    # Remove duplicates.
+    for i in paths:
+        if i not in paths_final:
+            paths_final.append(i)
+    for i in paths_final: print(i)
 
 
 if __name__ == "__main__":
