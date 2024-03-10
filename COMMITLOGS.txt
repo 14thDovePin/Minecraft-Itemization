@@ -1,3 +1,24 @@
+TODO:
+- ...
+
+
+
+Added ability to locate version jar file.
+
+- Added directories as well as file paths.
+- Added user input.
+- Added check for version jar file.
+
+
+
+Created a script for extracting Minecraft's items.
+
+- Created file `extract_items.py`.
+- Added main scope in created file.
+- Added a TODO list in `COMMIGLOGS.txt`.
+
+
+
 Template's Initial Commit
 
 - Added the following files:
