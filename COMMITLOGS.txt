@@ -3,6 +3,13 @@ TODO:
 
 
 
+Script can now extract designated values from lang file.
+
+- Added code to extract needed values from designated key paths.
+- Refactored code.
+
+
+
 Added a simple test function to check lang keys paths.
 
 - Added test function `view_lang_keys_paths`.
