@@ -1,0 +1,9 @@
+Template's Initial Commit
+
+- Added the following files:
+  + .gitignore
+  + COMMITLOGS.txt
+  + LICENSE
+  + README.md
+- License used is the MIT License.
+- Added contents to `README.md`.
