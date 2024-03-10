@@ -3,6 +3,13 @@ TODO:
 
 
 
+Added ability to extract contents of lang file.
+
+- Lang file's content's can now be extracted.
+- Refactored code.
+
+
+
 Added ability to locate version jar file.
 
 - Added directories as well as file paths.

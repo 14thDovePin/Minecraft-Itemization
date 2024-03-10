@@ -1,3 +1,4 @@
+import json
 import os
 import zipfile
 
@@ -13,10 +14,6 @@ OUTPUT = os.path.join(
     CWD,
     "ExtractedItems.txt"
     )
-TEMP = os.path.join(
-    CWD,
-    "temp"
-)
 
 
 def main():
@@ -32,6 +29,15 @@ def main():
             break
         else:
             print("Version not detected! Try again..")
+
+    # Open and grab contents of lang file.
+    with zipfile.ZipFile(jar_file) as jar:
+        with jar.open(LANG) as jar_lang_file:
+            lang_file = json.load(jar_lang_file)
+
+    print("Lang File Type: ", type(lang_file))
+    print("Lang File Length: ", len(lang_file))
+
 
 
 if __name__ == "__main__":
